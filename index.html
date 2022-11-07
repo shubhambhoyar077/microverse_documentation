@@ -2,25 +2,211 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Fork Me! FCC: Test Suite Template</title>
+    <title>HTML</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
-    <!--
+    <nav id="navbar">
+      <header>HTML Documentation</header>
+      <ul>
+        <li><a class="nav-link" href="#HTML_Introduction">HTML Introduction</a></li>
+        <li>
+          <a class="nav-link" href="#HTML_Basic">HTML Basic</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#HTML_Elements">HTML Elements</a>
+        </li>
+        <li><a class="nav-link" href="#HTML_Attributes">HTML Attributes</a></li>
+        <li><a class="nav-link" href="#HTML_Headings">HTML Headings</a></li>
+        <li>
+          <a class="nav-link" href="#HTML_Paragraphs">HTML Paragraphs</a>
+        </li>
+        <li><a class="nav-link" href="#HTML_Styles">HTML Styles</a></li>
+        <li><a class="nav-link" href="#HTML_Formatting">HTML Formatting</a></li>
+        <li><a class="nav-link" href="#HTML_Comments">HTML Comments</a></li>
+        <li><a class="nav-link" href="#Reference">Reference</a></li>
+      </ul>
+    </nav>
 
-    Hello Camper!
+    <main id="main-doc">
+      <section class="main-section" id="HTML_Introduction">
+        <header>HTML Introduction</header>
+        <article>
+          <p>
+            What is HTML?
+            <ul>
+            <li>HTML stands for Hyper Text Markup Language</li>
+            <li>HTML is the standard markup language for creating Web pages</li>
+            <li>HTML describes the structure of a Web page</li>
+            <li>HTML consists of a series of elements</li>
+            <li>HTML elements tell the browser how to display the content</li>
+            <li>HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc.</li>
+          </ul>
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="HTML_Basic">
+        <header>HTML Basic</header>
+        <article>
+          <p>HTML Documents</p>
 
-    For now, the test suite only works in Chrome!
-    Please read the README below in the JS Editor before beginning.
-    Feel free to delete this message once you have read it.
-    Good luck and Happy Coding!
+          <ul>
+            <li>
+              All HTML documents must start with a document type declaration: <code class="w3-codespan">&lt;!DOCTYPE html&gt;</code>.
+            </li>
+            <li>The HTML document itself begins with <code class="w3-codespan">&lt;html&gt;</code> and ends with <code class="w3-codespan">&lt;/html&gt;</code>.</li>
+            <li>
+              The visible part of the HTML document is between <code class="w3-codespan">&lt;body&gt;</code> and <code class="w3-codespan">&lt;/body&gt;</code>.
+            </li>
+          </ul>
+        </article>
+      </section>
+      <section class="main-section" id="HTML_Elements">
+        <header>HTML Elements</header>
+        <article>
+          <p>
+            <li> HTML element is everything from the start tag to the end tag:</li>
 
-    - The freeCodeCamp Team
+            <li><code class="w3-codespan">&lt;tagname&gt;</code>Content goes here...<code class="w3-codespan">&lt;/tagname&gt;</code></li>
+            <br>Examples of some HTML elements:
 
-    -->
+            <li><code class="w3-codespan">&lt;h1&gt;</code>My First Heading<code class="w3-codespan">&lt;/h1&gt;</code></li>
+            <li><code class="w3-codespan">&lt;p&gt;</code>My first paragraph.<code class="w3-codespan">&lt;/p&gt;</code></li>
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="HTML_Attributes">
+        <header>HTML Attributes</header>
+        <article>
+          <p>
+          <ul>
+            <li>
+              All HTML elements can have attributes
+            </li>
+            <li>
+              Attributes provide additional information about elements
+            </li>
+            <li>
+              Attributes are always specified in the start tag
+            </li>
+            <li>
+              Attributes usually come in name/value pairs like: name="value"
+            </li>
+          </ul>
+        </p>
+        </article>
+      </section>
+      <section class="main-section" id="HTML_Headings">
+        <header>HTML Headings</header>
+        <article>
+          <p>
+          <ul>
+            <li>
+              HTML headings are defined with the <code class="w3-codespan">&lt;h1&gt;</code> to <code class="w3-codespan">&lt;h6&gt;</code> tags.
+            </li>
+            <li>
+              <code class="w3-codespan">&lt;h1&gt;</code> defines the most important heading. <code class="w3-codespan">&lt;h6&gt;</code> defines the least important heading.
+            </li>
+            
+          </ul>
+        </p>
+        </article>
+      </section>
+      <section class="main-section" id="HTML_Paragraphs">
+        <header>HTML Paragraphs</header>
+        <article>
+          <p>
+          <ul>
+            <li>
+              The HTML <code class="w3-codespan">&lt;p&gt;</code> element defines a paragraph.
+            </li>
+            <li>
+              A paragraph always starts on a new line, and browsers automatically add some white space (a margin) before and after a paragraph.
+            </li>
+            
+          </ul>
+        </p>
+        </article>
+      </section>
+      <section class="main-section" id="HTML_Styles">
+        <header>HTML Styles</header>
+        <article>
+          <p>
+          <ul>
+            <li>
+              Setting the style of an HTML element, can be done with the style attribute.
+            </li>
+            <li>
+              The HTML style attribute has the following syntax:
+              <br>
+              <code class="w3-codespan">&lt;tagname style="property:value;"&gt;</code>
+            </li>
+            
+          </ul>
+        </p>
+        </article>
+      </section>
+      <section class="main-section" id="HTML_Formatting">
+        <header>HTML Formatting</header>
+        <article>
+          <p>Formatting elements were designed to display special types of text:</p>
+          <ul>
+            <li>
+              <code class="w3-codespan">&lt;b&gt;</code> - Bold text
+            </li>
+            <li>
+              <code class="w3-codespan">&lt;strong&gt;</code> - Important text
+            </li>
+            <li>
+              <code class="w3-codespan">&lt;i&gt;</code> - Italic text
+            </li>
+            <li>
+              <code class="w3-codespan">&lt;em&gt;</code> - Emphasized text
+            </li>
+            <li>
+              <code class="w3-codespan">&lt;mark&gt;</code> - Marked text
+            </li>
+            <li>
+              <code class="w3-codespan">&lt;small&gt;</code> - Smaller text
+            </li>
+            
+            
+          </ul>
+        
+        </article>
+      </section>
+
+      <section class="main-section" id="HTML_Comments">
+        <header>HTML Comments</header>
+        <article>
+          <p>You can add comments to your HTML source by using the following syntax:
+              <br>
+              <code class="w3-codespan">&lt;!-- Write your comments here --&gt;</code>
+            <br>
+            Notice that there is an exclamation point (!) in the start tag, but not in the end tag.</p>
+          
+        </article>
+      </section>
+
+      <section class="main-section" id="Reference">
+        <header>Reference</header>
+        <article>
+          <p>
+          <ul>
+            <li>
+              All the documentation in this page is taken from
+              <a href="https://www.w3schools.com/html/default.asp" target="_blank">HTML</a>
+            </li>
+          </ul>
+        </p>
+        </article>
+      </section>
+      
+    </main>
+    
     <script  src="js/index.js"></script>
   </body>
 </html>
